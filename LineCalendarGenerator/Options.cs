@@ -22,5 +22,8 @@ namespace LineCalendarGenerator
 
         [CommandLine.Option("vertical", HelpText = "縦出力", Default = false)]
         public bool Vertical { get; set; }
+
+        [CommandLine.Option("interval", HelpText = "文字間隔", Default = 40)]
+        public int Interval { get; set; }
     }
 }

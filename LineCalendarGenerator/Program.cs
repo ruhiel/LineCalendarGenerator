@@ -102,7 +102,7 @@ namespace LineCalendarGenerator
                             g.DrawString(dt.ToString("ddd", CultureInfo.GetCultureInfo("en-US")), new Font(parsed.Value.Font, 16), brush, 50, dayPosY, sf);
                             g.DrawString(dt.Day.ToString(), new Font(parsed.Value.Font, 24), brush, 90, dayPosY, sf);
 
-                            dayPosY += 50;
+                            dayPosY += options.Interval;
                         }
                         else
                         {
@@ -111,7 +111,7 @@ namespace LineCalendarGenerator
                             g.DrawString(dt.ToString("ddd", CultureInfo.GetCultureInfo("en-US")), new Font(parsed.Value.Font, 16), brush, posX, 40, sf);
                             g.DrawString(dt.Day.ToString(), new Font(parsed.Value.Font, 24), brush, posX, 80, sf);
 
-                            dayPosX += 50;
+                            dayPosX += options.Interval;
                         }
 
 
